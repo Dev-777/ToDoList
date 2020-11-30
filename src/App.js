@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ToDoList from "./components/ToDoList";
+import { connect } from "react-redux";
+import styled from "styled-components";
+import "reset-css";
+import Img from "../src/assets/images/todobackground.jpg";
 
-function App() {
+const App = ({ state, dispatch }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppContainer className="App">
+        <AddButton onClick={() => dispatch({ type: "open" })}>
+          Add ToDo
+        </AddButton>
+        <ToDoList />
+      </AppContainer>
+    </>
   );
-}
+};
 
-export default App;
+const AppContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-image: url(${Img});
+`;
+
+const AddButton = styled("button")`
+  color: tomato;
+`;
+
+const mapStateToProps = (state) => {
+  return { state: state };
+};
+
+export default connect(mapStateToProps)(App);
