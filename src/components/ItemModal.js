@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import ReactModal from "react-modal";
 import ToDoItem from "./ToDoItem";
 
-const ItemWrapper = ({ state, dispatch }) => {
+const ItemModal = ({ state, dispatch }) => {
   return (
     <>
       <ReactModal
@@ -34,4 +34,4 @@ const mapStateToProps = (state) => {
   return { state: state };
 };
 
-export default connect(mapStateToProps)(ItemWrapper);
+export default connect(mapStateToProps)(ItemModal);

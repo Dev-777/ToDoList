@@ -1,13 +1,11 @@
 import React, { useRef } from "react";
 import { connect } from "react-redux";
+import ColorButtons from "./ColorButtons";
 
 const ToDoItem = ({ state, dispatch }) => {
   const titleRef = useRef();
   const descriptionRef = useRef();
 
-  const selectColor = (color) => {
-    dispatch({ type: "color", titleColor: color });
-  };
   console.log(state, "state");
 
   return (
@@ -32,13 +30,7 @@ const ToDoItem = ({ state, dispatch }) => {
       </button>
       <button onClick={() => dispatch({ type: "open" })}>cancel</button>
 
-      {state.colors.map((item, index) => (
-        <button
-          key={index + Date()}
-          onClick={() => selectColor(item)}
-          style={{ backgroundColor: item, width: 50, height: 50 }}
-        />
-      ))}
+      <ColorButtons />
     </>
   );
 };

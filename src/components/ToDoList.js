@@ -1,13 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
-import ItemModal from "./ItemWrapper";
+import ItemModal from "./ItemModal";
 import styled from "styled-components";
+import Item from "./Item";
 
 const ToDoList = ({ state, dispatch }) => {
   return (
     <>
       <ToDoListWrapper>
         <ItemModal />
+        {state.toDoList.map((i, index) => (
+          <Item index={index} />
+        ))}
       </ToDoListWrapper>
     </>
   );
