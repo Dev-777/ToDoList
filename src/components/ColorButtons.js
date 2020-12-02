@@ -3,7 +3,13 @@ import { connect } from "react-redux";
 
 const ColorButton = ({ state, dispatch, indexItem }) => {
   const selectColor = (color) => {
-    dispatch({ type: "color", titleColor: color });
+    indexItem || indexItem === 0
+      ? dispatch({
+          type: "listItemColor",
+          titleColor: color,
+          itemIndex: indexItem,
+        })
+      : dispatch({ type: "color", titleColor: color });
   };
   return (
     <>

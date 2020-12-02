@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import ReactModal from "react-modal";
-import ToDoItem from "./ToDoItem";
+import ToDoItem from "./ItemCreatedForm";
 
 const ItemModal = ({ state, dispatch }) => {
   return (
