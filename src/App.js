@@ -4,16 +4,20 @@ import { connect } from "react-redux";
 import styled from "styled-components";
 import "reset-css";
 import Img from "../src/assets/images/todobackground.jpg";
+import Test from "./components/Test";
+import ToDoItem from "./components/ToDoItem";
 
 const App = ({ state, dispatch }) => {
   return (
     <>
-      <AppContainer className="App">
-        <AddButton onClick={() => dispatch({ type: "open" })}>
-          Add ToDo
-        </AddButton>
-        <ToDoList />
-      </AppContainer>
+      {/*<AppContainer className="App">*/}
+      {/*  <AddButton onClick={() => dispatch({ type: "open" })}>*/}
+      {/*    Add ToDo*/}
+      {/*  </AddButton>*/}
+      {/*  <ToDoList />*/}
+      {/*</AppContainer>*/}
+      <ToDoItem />
+      {/*<Test />*/}
     </>
   );
 };

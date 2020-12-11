@@ -10,7 +10,7 @@ const ToDoList = ({ state, dispatch }) => {
       <ToDoListWrapper>
         <ItemModal />
         {state.toDoList.map((i, index) => (
-          <Item index={index} />
+          <Item key={new Date().getTime() + "t"} index={index} />
         ))}
       </ToDoListWrapper>
     </>

@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd78834b-6658-450d-87e1-1a3eb485ea94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ColorButtons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreateItemForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ToDoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ToDoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/Reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +71,11 @@
       <updated>1606764570403</updated>
       <workItem from="1606764577741" duration="10623000" />
       <workItem from="1606827884456" duration="3121000" />
+      <workItem from="1606891440484" duration="31000" />
+      <workItem from="1607005988213" duration="1479000" />
+      <workItem from="1607062644109" duration="980000" />
+      <workItem from="1607681457272" duration="675000" />
+      <workItem from="1607684614547" duration="13013000" />
     </task>
     <servers />
   </component>

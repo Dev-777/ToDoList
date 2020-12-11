@@ -7,7 +7,7 @@ const ItemModal = ({ state, dispatch }) => {
   return (
     <>
       <ReactModal
-        isOpen={state.modal7}
+        isOpen={state.modalIsVisible}
         ariaHideApp={false}
         style={{
           overlay: {},
@@ -23,7 +23,7 @@ const ItemModal = ({ state, dispatch }) => {
         shouldCloseOnOverlayClick={true}
         shouldCloseOnEsc={false}
       >
-        <button onClick={() => dispatch({ type: "open" })}>close</button>
+        <button onClick={() => dispatch({ type: "close" })}>close</button>
         <ToDoItem />
       </ReactModal>
     </>
